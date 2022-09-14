@@ -21,7 +21,7 @@
     </script>
     <style>
         .c1{
-            width:250px;
+            width:200px;
         }
         *{
             margin:0;
@@ -45,26 +45,26 @@
 <body>
     <center>
     <h1>REGISTRATION FORM</h1>
-    <form action="index.html" onsubmit="myfunction(event)">
+    <form action="" onsubmit="myfunction(event)">
         <table>
             <tr>
                 <td>name</td>
-                <td><input class="c1" type="text" id="name"></td>
+                <td><input required class="c1" type="text" id="name"></td>
             </tr>
             <tr>
                 <td>email</td>
-                <td><input class="c1" type="email" id="email"> </td>
+                <td><input required class="c1" type="email" id="email"> </td>
             </tr>
             <tr>
                 <td>password</td>
-                <td><input class="c1" type="password" id="password"> </td>
+                <td><input required class="c1" type="password" id="password"> </td>
             </tr>
             <tr>
                 <td>date of birth</td>
                 <td><input class="c1" type="text" id="dob"></td>
             </tr>
             <tr>
-                <td><input type="checkbox">accept terms </td>
+                <td><input required type="checkbox">accept terms </td>
             </tr>
             <tr>
                 <td><button type="submit">submit</button> </td>
