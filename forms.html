@@ -21,13 +21,31 @@
     </script>
     <style>
         .c1{
-            width:200px;
+            width:250px;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Times New Roman', Times, serif;
+        }
+        body{
+            min-height:100vh;
+            display:inline-block;
+            justify-content:center;
+            align-items:center;
+        }
+        form input{
+            margin:4px;
+            padding:4px;
         }
     </style>
     </head>
 
 <body>
-    <form onsubmit="myfunction(event)">
+    <center>
+    <h1>REGISTRATION FORM</h1>
+    <form action="index.html" onsubmit="myfunction(event)">
         <table>
             <tr>
                 <td>name</td>
@@ -53,14 +71,15 @@
             </tr>
         </table>
     </form>
+</center>
     <script>
         function myfunction(event)
         {
             event.preventDefault();
-            var name=document.getElementById("name");
-            var email=document.getElementById("email");
-            var password=document.getElementById("password");
-            var dob=document.getElementById("dob");
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            var dob=document.getElementById("dob").value;
             localStorage.setItem('ls_name',name);
             localStorage.setItem('ls_email',email);
             localStorage.setItem('ls_password',password);
